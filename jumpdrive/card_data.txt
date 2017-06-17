@@ -1,0 +1,127 @@
+# Card Data
+#
+# Contains all of the information for each card in Jump Drive
+#
+# This is used in card.py to initialize the deck of cards.  Each line
+# represents a different card; card variables are tab delimited.  IDs
+# have been established by ordering the deck by cost, then by name, with
+# an enumeration appended to cards that have duplicates.  See card.Card
+# for more information on Card arguments.
+
+id	name	cost	card_type	effects	icons	military	vps	income	
+0	Devolved Uplift Race	0	NOVELTY	None	CHROMOSOME,CHROMOSOME	vps=1
+1	Arboreal Uplift Race	1	GENES	None	CHROMOSOME	military=True	income=1
+2	Amphibious Uplift Race	1	GENES	None	CHROMOSOME	military=True	income=1
+3a	Artist Colony	1	NOVELTY	{CountWith:{"Galactic Advertisers":1}}	EXPLORE	vps=1
+3b	Artist Colony	1	NOVELTY	{CountWith:{"Galactic Advertisers":1}}	EXPLORE	vps=1
+4a	Colony Convoy	1	DEVELOPMENT	{SettleSecond:1}	EXPLORE
+4b	Colony Convoy	1	DEVELOPMENT	{SettleSecond:1}	EXPLORE
+4c	Colony Convoy	1	DEVELOPMENT	{SettleSecond:1}	EXPLORE
+4d	Colony Convoy	1	DEVELOPMENT	{SettleSecond:1}	EXPLORE
+5a	Contact Specialist	1	DEVELOPMENT	{PayMilitary:1}	EXPLORE	vps=1
+5b	Contact Specialist	1	DEVELOPMENT	{PayMilitary:1}	EXPLORE	vps=1
+5c	Contact Specialist	1	DEVELOPMENT	{PayMilitary:1}	EXPLORE	vps=1
+6	Gem Smugglers	1	RARE_ELEMENTS	None	EXPLORE	military=True	vps=1	income=1
+7a	Genetics Lab	1	DEVELOPMENT	{CountWith:{GENES:1}}	EXPLORE	vps=1
+7b	Genetics Lab	1	DEVELOPMENT	{CountWith:{GENES:1}}	EXPLORE	vps=1
+8	Insect Uplift Race	1	GENES	None	CHROMOSOME	income=1
+9a	Investment Credits	1	DEVELOPMENT	{Discount:{DEVELOPMENT:1}}	None	vps=1
+9b	Investment Credits	1	DEVELOPMENT	{Discount:{DEVELOPMENT:1}}	None	vps=1
+9c	Investment Credits	1	DEVELOPMENT	{Discount:{DEVELOPMENT:1}}	None	vps=1
+10	Lifeforms Inc.	1	GENES	None	CHROMOSOME	vps=1	income=1
+11a	Military Convoy	1	DEVELOPMENT	{SettleSecond:2}	EXPLORE,MILITARY
+11b	Military Convoy	1	DEVELOPMENT	{SettleSecond:2}	EXPLORE,MILITARY
+12a	Mining Robots	1	DEVELOPMENT	{Discount:{RARE_ELEMENTS:1}}	EXPLORE	vp=1
+12b	Mining Robots	1	DEVELOPMENT	{Discount:{RARE_ELEMENTS:1}}	EXPLORE	vp=1
+13	New Survivalists	1	NOVELTY	None	MILITARY,MILITARY	military=True
+14	New Vinland	1	NOVELTY	{CountWith:{"Galactic Advertisers":"2 income"}}	EXPLORE,EXPLORE
+15	Pirate Fuel Cache	1	RARE_ELEMENTS	{CountWith:{"Military Convoy":"1 vps"}}	MILITARY	income=1
+16	SMUGGLING LAIR	1	NOVELTY	None	EXPLORE,MILITARY	military=True	income=1
+17a	Survey Team	1	DEVELOPMENT	{Limit:1}	EXPLORE,EXPLORE,MILITARY	income=1
+17b	Survey Team	1	DEVELOPMENT	{Limit:1}	EXPLORE,EXPLORE,MILITARY	income=1
+17c	Survey Team	1	DEVELOPMENT	{Limit:1}	EXPLORE,EXPLORE,MILITARY	income=1
+17d	Survey Team	1	DEVELOPMENT	{Limit:1}	EXPLORE,EXPLORE,MILITARY	income=1
+18a	Trade Pact	1	DEVELOPMENT	{Limit:1,TradePact:1}	EXPLORE	vps=1	income=1
+18b	Trade Pact	1	DEVELOPMENT	{Limit:1,TradePact:1}	EXPLORE	vps=1	income=1
+18c	Trade Pact	1	DEVELOPMENT	{Limit:1,TradePact:1}	EXPLORE	vps=1	income=1
+18d	Trade Pact	1	DEVELOPMENT	{Limit:1,TradePact:1}	EXPLORE	vps=1	income=1
+18e	Trade Pact	1	DEVELOPMENT	{Limit:1,TradePact:1}	EXPLORE	vps=1	income=1
+19	Adaptable Uplift Race	2	GENES	None	CHROMOSOME	military=True	vps=1	income=1
+20	Ancient Races	2	GENES	None	None	vps=1	income=2
+21a	Asteroid Belt	2	RARE_ELEMENTS	{CountsWith:{"Mining Robots":"1 income"}}	None	income=2
+21b	Asteroid Belt	2	RARE_ELEMENTS	{CountsWith:{"Mining Robots":"1 income"}}	None	income=2
+21c	Asteroid Belt	2	RARE_ELEMENTS	{CountsWith:{"Mining Robots":"1 income"}}	None	income=2
+22a	Consumer Markets	2	DEVELOPMENT	{CountPer:{NOVELTY:"1 vps",NOVELTY:"1 income"}}	None
+22b	Consumer Markets	2	DEVELOPMENT	{CountPer:{NOVELTY:"1 vps",NOVELTY:"1 income"}}	None
+22c	Consumer Markets	2	DEVELOPMENT	{CountPer:{NOVELTY:"1 vps",NOVELTY:"1 income"}}	None
+23	Convict Miners	2	RARE_ELEMENTS	None	EXPLORE,MILITARY	military=True	vps=1	income=1
+24	Former Penal Colony	2	NOVELTY	{CountWith:{"Galactic Advertisers":"1 income"}}	MILITARY	military=True	vps=1	income=1
+25a	Gem World	2	NOVELTY	{CountWith:{"Mining Conglomerate":"2 vps"}}	None	income=2
+25b	Gem World	2	NOVELTY	{CountWith:{"Mining Conglomerate":"2 vps"}}	None	income=2
+26	Reptilian Uplift World	2	GENES	None	CHROMOSOME	military=True	vps=1	income=1
+27	Rosetta Stone World	2	GENERIC	{Discount:{ALIEN:2}}	EXPLORE,EXPLORE	vps=3
+28a	Space Marines	2	DEVELOPMENT	None	MILITARY,MILITARY
+28b	Space Marines	2	DEVELOPMENT	None	MILITARY,MILITARY
+28c	Space Marines	2	DEVELOPMENT	None	MILITARY,MILITARY
+28d	Space Marines	2	DEVELOPMENT	None	MILITARY,MILITARY
+29a	War Propaganda	2	DEVELOPMENT	{GiveToMostMilitary:1}	MILITARY	vps=3	income=1
+29b	War Propaganda	2	DEVELOPMENT	{GiveToMostMilitary:1}	MILITARY	vps=3	income=1
+30	Alien Toy Shop	3	ALIEN	{CountWith:{"Alien Technology Institute":"1 vps"}}	None	income=3
+31a	Comet Zone	3	RARE_ELEMENTS	None	income=3
+31b	Comet Zone	3	RARE_ELEMENTS	None	income=3
+32a	Galactic Advertisers	3	DEVELOPMENT	{Discount:{"Galactic Trendsetters":1}}	None	income=2
+32b	Galactic Advertisers	3	DEVELOPMENT	{Discount:{"Galactic Trendsetters":1}}	None	income=2
+32c	Galactic Advertisers	3	DEVELOPMENT	{Discount:{"Galactic Trendsetters":1}}	None	income=2
+33	Galactic Resort	3	NOVELTY	{CountWith:{"Galactic Advertisers":"1 income"}}	EXPLORE	vps=2	income=1
+34	Imperium Blaster Factory	3	RARE_ELEMENTS	{CountWith:{"Mining Conglomerate":"1 vps"}}	MILITARY	military=True	vps=1	income=2
+35a	Mining Conglomerate	3	{Discount:{RARE_ELEMENTS:1},CountPer{RARE_ELEMENTS:"1 vps"}}	MILITARY	income=1
+35b	Mining Conglomerate	3	{Discount:{RARE_ELEMENTS:1},CountPer{RARE_ELEMENTS:"1 vps"}}	MILITARY	income=1
+36a	Mining World	3	RARE_ELEMENTS	{CountWith:{"Mining Robots":"1 income"}}	None	vps=1	income=2
+36b	Mining World	3	RARE_ELEMENTS	{CountWith:{"Mining Robots":"1 income"}}	None	vps=1	income=2
+37	Pirate Lair	3	NOVELTY	None	EXPLORE,MILITARY	military=True	vps=1	income=2
+38	Rebel Underground	3	REBEL	None	None	military=True	vps=3	income=1
+39a	Replicant Robots	3	DEVELOPMENT	{Discount:{"World":2}}	None	vps=2
+39b	Replicant Robots	3	DEVELOPMENT	{Discount:{"World":2}}	None	vps=2
+40	Space Symbionts	3	GENES	{Discount:{DEVELOPMENT:2}}	EXPLORE,CHROMOSOME	vps=1	income=1
+41a	Tourist World	3	NOVELTY	{CountWith:{"Artist Colony":"1 income"}}	EXPLORE	vps=1	income=2
+41b	Tourist World	3	NOVELTY	{CountWith:{"Artist Colony":"1 income"}}	EXPLORE	vps=1	income=2
+42	Uplift Mining Moles	3	RARE_ELEMENTS	{Discount:{RARE_ELEMENTS:1}}	EXPLORE,CHROMOSOME	vps=1	income=2
+43	Warrior Race	3	GENES	None	MILITARY,CHROMOSOME	military=True	vps=1	income=1
+44	Alien Robot Sentry	4	ALIEN	None	EXPLORE,MILITARY	military=True	vps=2	income=1
+45a	Drop Ships	4	DEVELOPMENT	None	MILITARY,MILITARY,MILITARY	vps=2
+45b	Drop Ships	4	DEVELOPMENT	None	MILITARY,MILITARY,MILITARY	vps=2
+46a	Galactic Trendsetters	4	GENERIC	{CountPer:{"Galactic Trendsetters":"2 vps"}}	EXPLORE
+46b	Galactic Trendsetters	4	GENERIC	{CountPer:{"Galactic Trendsetters":"2 vps"}}	EXPLORE
+46c	Galactic Trendsetters	4	GENERIC	{CountPer:{"Galactic Trendsetters":"2 vps"}}	EXPLORE
+46d	Galactic Trendsetters	4	GENERIC	{CountPer:{"Galactic Trendsetters":"2 vps"}}	EXPLORE
+46e	Galactic Trendsetters	4	GENERIC	{CountPer:{"Galactic Trendsetters":"2 vps"}}	EXPLORE
+46f	Galactic Trendsetters	4	GENERIC	{CountPer:{"Galactic Trendsetters":"2 vps"}}	EXPLORE
+46g	Galactic Trendsetters	4	GENERIC	{CountPer:{"Galactic Trendsetters":"2 vps"}}	EXPLORE
+47	Survey HQ	4	NOVELTY	{CountPer:{EXPLORE:"0.5 vps",EXPLORE:"0.5 income"}}	EXPLORE,EXPLORE,MILITARY
+48	Uplift Mercenaries	4	GENES	{CountPer:{CHROMOSOME:"1 income", CHROMOSOME:"1 MILITARY"}}	EXPLORE,CHROMOSOME	vps=1
+49a	Uplift Researchers	4	DEVELOPMENT	{CountPer:{CHROMOSOME:"1 vps", CHROMOSOME:"1 income"}}	CHROMOSOME
+49b	Uplift Researchers	4	DEVELOPMENT	{CountPer:{CHROMOSOME:"1 vps", CHROMOSOME:"1 income"}}	CHROMOSOME
+49c	Uplift Researchers	4	DEVELOPMENT	{CountPer:{CHROMOSOME:"1 vps", CHROMOSOME:"1 income"}}	CHROMOSOME
+50	Deserted Alien Colony	5	ALIEN	None	vps=4	income=2
+51	Lost Alien Warship	5	ALIEN	None	MILITARY,MILITARY	military=True	vps=3	income=1
+52	Lost Species Ark World	5	GENES	None	CHROMOSOME	vps=2	income=4
+53	New Earth	5	RARE_ELEMENTS	{CountWith:{"Galactic Advertisers":"1 vps"}}	EXPLORE	vps=3	income=3
+54	Rebel Outpost	5	REBEL	None	MILITARY	military=True	vps=5
+55	Terraformed World	5	GENERIC	None	EXPLORE	vps=5	income=1
+56	Deserted Alien World	6	ALIEN	None	None	vps=5	income=2
+57a	Galactic Salon	6	DEVELOPMENT	{Discount:{DEVELOPMENT:1}}	EXPLORE,EXPLORE	vps=5
+57b	Galactic Salon	6	DEVELOPMENT	{Discount:{DEVELOPMENT:1}}	EXPLORE,EXPLORE	vps=5
+58	Lost Alien Battle Fleet	6	ALIEN	None	MILITARY,MILITARY,MILITARY	military=True	vps=4	income=1
+59	Rebel Base	6	REBEL	None	EXPLORE	military=True	vps=6
+60	Alien Technology Institute	7	DEVELOPMENT	{CountPer:{ALIEN:"4 vps",ALIEN:"4 vps OP"}, Discount:{ALIEN:2}}	EXPLORE	income=2
+61	Deserted Alien Library	7	ALIEN	None	None	vps=6	income=2
+62	Free Trade Association	7	DEVELOPMENT	{CountPer:{NOVELTY:"2 vps",NOVELTY:"1 vps OP"}}	EXPLORE	income=2
+63	Rebel World	7	REBEL	None	None	military=True	vps=7
+64	Alien Guardians	8	ALIEN	None	None	military=True	vps=7	income=1
+65	Galactic Imperium	8	DEVELOPMENT	{CountPer:{"military":"2 vps","military":"1 vps OP"},Discount:{REBEL:4}}	EXPLORE
+66	Mining League	8	DEVELOPMENT	{CountPer:{RARE_ELEMENTS:"3 vps",RARE_ELEMENTS:"1 income"}}	EXPLORE
+67	New Galactic Order	8	DEVELOPMENT	{CountPer:{MILITARY:"1 vps"}}	MILITARY,MILITARY
+68	Galactic Federation	9	DEVELOPMENT	{CountPer:{DEVELOPMENT:"2 vps",DEVELOPMENT:"1 vps OP"},Discount:{DEVELOPMENT:2}} None
+69	Galactic Survey: Seti	9	DEVELOPMENT	{CountPer:{EXPLORE:"1 vps",EXPLORE:"1 vps OP"}}	EXPLORE,EXPLORE,EXPLORE
+70	Rebel Stronghold	9	REBEL	None	None	military=True	vps=9
+71	Uplift Code	9	DEVELOPMENT	{CountPer:{CHROMOSOME:"1 vps",CHROMOSOME:"1 vps OP",CHROMOSOME:"1 income"}}	CHROMOSOME,CHROMOSOME

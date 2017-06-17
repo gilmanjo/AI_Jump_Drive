@@ -1,11 +1,14 @@
+#!/usr/bin/env python
+
 from enum import Enum
 
+
 class CardType(Enum):
-	_unused, DEVELOPMENT, NOVELTY, RARE ELEMENTS, GENES, 
-	ALIEN, REBEL, GENERIC = range(7)
+	_unused, DEVELOPMENT, NOVELTY, RARE_ELEMENTS, GENES, \
+	ALIEN, REBEL, GENERIC = range(8)
 
 class Icon(Enum):
-	EXPLORE, MILITARY, CHROMOSOME, = range(3)
+	_unused, EXPLORE, MILITARY, CHROMOSOME, = range(4)
 
 class EffectType(Enum):
 	_unused, SCORE, INCOME, LIMIT, SPECIAL = range(5)
@@ -28,7 +31,7 @@ class Card(object):
 
 class Effect(object):
 	"""docstring for Effect"""
-	def __init__(self, effect_type=EffectType._unused, description):
+	def __init__(self, description, effect_type=EffectType._unused):
 		super(Effect, self).__init__()
 		self.effect_type = effect_type
 		self.description = description
@@ -38,8 +41,8 @@ class Effect(object):
 
 class CountPer(Effect):
 	"""Counts a type of card or icon and """
-	def __init__(self, card_type, icon=None, count, solo=False, 
-				other_player=False, reward):
+	def __init__(self, card_type, reward, count, icon=None, solo=False, 
+				other_player=False):
 		super(CountPer, self).__init__()
 
 class Discount(Effect):
