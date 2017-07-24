@@ -7,8 +7,8 @@
 # have been established by ordering the deck by cost, then by name, with
 # an enumeration appended to cards that have duplicates.  See card.Card
 # for more information on Card arguments.
-
-id	name	cost	card_type	effects	icons	military	vps	income	
+#
+#id	name	cost	card_type	effects	icons	military	vps	income	
 0	Devolved Uplift Race	0	NOVELTY	None	CHROMOSOME,CHROMOSOME	vps=1
 1	Arboreal Uplift Race	1	GENES	None	CHROMOSOME	military=True	income=1
 2	Amphibious Uplift Race	1	GENES	None	CHROMOSOME	military=True	income=1
@@ -67,15 +67,15 @@ id	name	cost	card_type	effects	icons	military	vps	income
 29a	War Propaganda	2	DEVELOPMENT	{GiveToMostMilitary:1}	MILITARY	vps=3	income=1
 29b	War Propaganda	2	DEVELOPMENT	{GiveToMostMilitary:1}	MILITARY	vps=3	income=1
 30	Alien Toy Shop	3	ALIEN	{CountWith:{"Alien Technology Institute":"1 vps"}}	None	income=3
-31a	Comet Zone	3	RARE_ELEMENTS	None	income=3
-31b	Comet Zone	3	RARE_ELEMENTS	None	income=3
+31a	Comet Zone	3	RARE_ELEMENTS	None	None	income=3
+31b	Comet Zone	3	RARE_ELEMENTS	None	None	income=3
 32a	Galactic Advertisers	3	DEVELOPMENT	{Discount:{"Galactic Trendsetters":1}}	None	income=2
 32b	Galactic Advertisers	3	DEVELOPMENT	{Discount:{"Galactic Trendsetters":1}}	None	income=2
 32c	Galactic Advertisers	3	DEVELOPMENT	{Discount:{"Galactic Trendsetters":1}}	None	income=2
 33	Galactic Resort	3	NOVELTY	{CountWith:{"Galactic Advertisers":"1 income"}}	EXPLORE	vps=2	income=1
 34	Imperium Blaster Factory	3	RARE_ELEMENTS	{CountWith:{"Mining Conglomerate":"1 vps"}}	MILITARY	military=True	vps=1	income=2
-35a	Mining Conglomerate	3	{Discount:{RARE_ELEMENTS:1},CountPer{RARE_ELEMENTS:"1 vps"}}	MILITARY	income=1
-35b	Mining Conglomerate	3	{Discount:{RARE_ELEMENTS:1},CountPer{RARE_ELEMENTS:"1 vps"}}	MILITARY	income=1
+35a	Mining Conglomerate	3	DEVELOPMENT	{Discount:{RARE_ELEMENTS:1},CountPer{RARE_ELEMENTS:"1 vps"}}	MILITARY	income=1
+35b	Mining Conglomerate	3	DEVELOPMENT	{Discount:{RARE_ELEMENTS:1},CountPer{RARE_ELEMENTS:"1 vps"}}	MILITARY	income=1
 36a	Mining World	3	RARE_ELEMENTS	{CountWith:{"Mining Robots":"1 income"}}	None	vps=1	income=2
 36b	Mining World	3	RARE_ELEMENTS	{CountWith:{"Mining Robots":"1 income"}}	None	vps=1	income=2
 37	Pirate Lair	3	NOVELTY	None	EXPLORE,MILITARY	military=True	vps=1	income=2
@@ -102,7 +102,7 @@ id	name	cost	card_type	effects	icons	military	vps	income
 49a	Uplift Researchers	4	DEVELOPMENT	{CountPer:{CHROMOSOME:"1 vps", CHROMOSOME:"1 income"}}	CHROMOSOME
 49b	Uplift Researchers	4	DEVELOPMENT	{CountPer:{CHROMOSOME:"1 vps", CHROMOSOME:"1 income"}}	CHROMOSOME
 49c	Uplift Researchers	4	DEVELOPMENT	{CountPer:{CHROMOSOME:"1 vps", CHROMOSOME:"1 income"}}	CHROMOSOME
-50	Deserted Alien Colony	5	ALIEN	None	vps=4	income=2
+50	Deserted Alien Colony	5	ALIEN	None	None	vps=4	income=2
 51	Lost Alien Warship	5	ALIEN	None	MILITARY,MILITARY	military=True	vps=3	income=1
 52	Lost Species Ark World	5	GENES	None	CHROMOSOME	vps=2	income=4
 53	New Earth	5	RARE_ELEMENTS	{CountWith:{"Galactic Advertisers":"1 vps"}}	EXPLORE	vps=3	income=3
@@ -121,7 +121,7 @@ id	name	cost	card_type	effects	icons	military	vps	income
 65	Galactic Imperium	8	DEVELOPMENT	{CountPer:{"military":"2 vps","military":"1 vps OP"},Discount:{REBEL:4}}	EXPLORE
 66	Mining League	8	DEVELOPMENT	{CountPer:{RARE_ELEMENTS:"3 vps",RARE_ELEMENTS:"1 income"}}	EXPLORE
 67	New Galactic Order	8	DEVELOPMENT	{CountPer:{MILITARY:"1 vps"}}	MILITARY,MILITARY
-68	Galactic Federation	9	DEVELOPMENT	{CountPer:{DEVELOPMENT:"2 vps",DEVELOPMENT:"1 vps OP"},Discount:{DEVELOPMENT:2}} None
+68	Galactic Federation	9	DEVELOPMENT	{CountPer:{DEVELOPMENT:"2 vps",DEVELOPMENT:"1 vps OP"},Discount:{DEVELOPMENT:2}}	None
 69	Galactic Survey: Seti	9	DEVELOPMENT	{CountPer:{EXPLORE:"1 vps",EXPLORE:"1 vps OP"}}	EXPLORE,EXPLORE,EXPLORE
 70	Rebel Stronghold	9	REBEL	None	None	military=True	vps=9
 71	Uplift Code	9	DEVELOPMENT	{CountPer:{CHROMOSOME:"1 vps",CHROMOSOME:"1 vps OP",CHROMOSOME:"1 income"}}	CHROMOSOME,CHROMOSOME

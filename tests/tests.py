@@ -26,12 +26,21 @@ class GameTests(unittest.TestCase):
 		self.assertIsInstance(self.game.players[1], game.Player)
 		self.assertIsInstance(self.game.players[0], game.Player)
 
-	# Tests that drawn cards are removed from the deck
-	def testDeckPopsStack(self):
+	# Tests all cards are unique
+	def testAllUniqueCards(self):
 		d = game.Deck()
-		card = d.getCard()
+		ids = []
 		for x in d.cards:
-			self.assertNotEqual(card.id, x.id)
+			for y in ids:
+				self.assertNotEqual(x.card_id, y)
+			ids.append(x.card_id)
+
+	# Tests that drawn cards are removed from the deck
+	def testDeckGetCard(self):
+		d = game.Deck()
+		card = d.drawCard()
+		for x in d.cards:
+			self.assertNotEqual(card.card_id, x.card_id)
 
 def main():
 	unittest.main()
